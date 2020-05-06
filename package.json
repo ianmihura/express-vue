@@ -1,0 +1,22 @@
+{
+    "name": "express-vue",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "nstart": "nodemon ./bin/www",
+        "vue-build": "cd vue-app && npm run build",
+        "vue-serve": "cd vue-app && npm run serve"
+    },
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "ejs": "~2.6.1",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "morgan": "~1.9.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous"></script>
+
+    <link href=vue-app/js/app.js rel=preload as=script>
+    <link href=vue-app/js/chunk-vendors.js rel=preload as=script>
+
+    <script src="javascripts/main.js"></script>
+</head>
+
+<body>
+    <h1><%= title %></h1>
+    <p>This app is a Express-served app, with a small Vue.js app inside,<br> which allows for node
+        modules to be executed from the front end.</p>
+    <p>You can call the Vue.js function from the Express client-side,</p>
+    <button onclick="ExpressButton()">Express Button</button>
+    <br>
+    <br>
+    <div id=app></div>
+    <script src=vue-app/js/chunk-vendors.js></script>
+    <script src=vue-app/js/app.js></script>
+</body>
+
+</html>
