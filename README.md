@@ -7,8 +7,17 @@ This is, a Vue app inside an Express app.
 I personally find it usefull to have some `npm modules` available in static front-end environments, without `require.js` or any externalities. The code is made with performance in mind, therefore all views in the vue-app have been removed.
 But you may find further uses. Feel free to use it as you may.
 
+### Install
+Make sure you install both apps!
+```
+npm install
+cd vue-app
+npm install
+```
+
 ### Build
-Inspect the `package.json` to see the default commands
+Inspect the root (Express) `package.json` to see the default commands
+All the necessary commands will be executed from the root directory (Express app)
 
 ```
 // Starts a nodemon instance of the app
